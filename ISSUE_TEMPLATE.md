@@ -1,9 +1,5 @@
 ### Type of Issue
-
-  <input type="radio" name="issue" value="bug"> Bug<br>
-  <input type="radio" name="issue" value="enhancement"> Enhancement<br>
-  <input type="radio" name="issue" value="pull_request"> Pull Request</br>
-  <input type="radio" name="issue" value="other"> Other
+ Bug (Reference #), Enhancement, Pull Request (Reference #), or Other
 
 ### Installed product versions
 - Visual Studio: [example 2015 Professional]
