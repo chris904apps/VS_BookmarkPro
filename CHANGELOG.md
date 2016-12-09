@@ -8,7 +8,7 @@
   - [ ] Folders can be put inside of other folders
 - [ ] Meta
   - [ ] bookmarks and folders can be given names
-  - [ ] bookmarks and folders can be identifed and catagorized with meta tags
+  - [ ] bookmarks and folders can be identified and categorized with meta tags
   - [ ] bookmarks and folders can be have comments
 - [ ] Navigation
   - [ ] Bookmarks and folders can be sorted by column headers

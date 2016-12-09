@@ -12,14 +12,14 @@
 -->
 ---------------------------------------
 
-BookmarkPro is a Visual Studio (VS) extention that gives developers the features, they need with that are currently not baked into VS. 
+BookmarkPro is a Visual Studio (VS) extension that gives developers the features, they need with that are currently not baked into VS. 
 
 ## Visual Studio's built in Bookmarking
 Pro(s) | Con(s)
 ------------ | -------------
 - Can mark line | - Line can only be marked once 
 - Can group inside folder | - Can't put folders inside folders
-- Simple column header sorting | - Can't do more indepth sorting and filtering 
+- Simple column header sorting | - Can't do more in-depth sorting and filtering 
 - Can name bookmarks and folders(groups)  | - No additional meta can be associated with bookmark or folder
  | - Can not share bookmarks
  | - No indication that bookmark may no longer be valid as the lines have changed
@@ -27,7 +27,7 @@ Pro(s) | Con(s)
  | - No comments
  | - Can't bookmark sections of code 
  | - Bookmark Icon in margin doesn't display with highlighting
- | - Can't associate with TFS artifacts (Bugs, Use Cases), and no intergration with source control
+ | - Can't associate with TFS artifacts (Bugs, Use Cases), and no integration with source control
 
 
 <!--TODO:

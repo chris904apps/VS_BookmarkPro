@@ -1,0 +1,99 @@
+﻿<UserControl x:Class="BookmarkPro.BookmarkProWindowControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             Background="{DynamicResource VsBrush.Window}"
+             Foreground="{DynamicResource VsBrush.WindowText}"
+             mc:Ignorable="d"
+             Name="MyToolWindow" Height="354.317" Width="776.06">
+    <Grid ScrollViewer.CanContentScroll="True">
+        <!--<DockPanel>
+            <Label DockPanel.Dock="Top">BookMarkPro</Label>
+            <StackPanel DockPanel.Dock="Left">
+                <Label>Action Panel</Label>
+                <StackPanel Orientation="Horizontal">
+                    <ComboBox Text="Sort By"></ComboBox>
+                    <ComboBox Text="Filter By"></ComboBox>
+                </StackPanel>
+                <ListView>Bookmark.Group tree view</ListView>
+            </StackPanel>
+            <GridSplitter />
+            <TabControl></TabControl>
+            <StackPanel DockPanel.Dock="Right">
+                <Label Content="Details Panel"/>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Unique Id:"/>
+                    <Label Content="Id"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Name:"/>
+                    <TextBox/>
+                    <Label Content="Type:"/>
+                    <Label Content="Bookmark or Group"/>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="Description/Comment:"/>
+                    <TextBox MinLines="6"/>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="Tags"/>
+                    <DataGrid />
+                </StackPanel>
+            </StackPanel>
+        </DockPanel>-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="9"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Grid.Row="1">
+                <StackPanel DockPanel.Dock="Left">
+                    <Label>Action Panel</Label>
+                    <StackPanel Orientation="Horizontal">
+                        <ComboBox Name="SortBy" Text="Sort By"></ComboBox>
+                        <ComboBox Name="FilterBy" Text="Filter By"></ComboBox>
+                    </StackPanel>
+                    <ListView Name="Marks">
+                        
+                        Bookmark.Group tree view
+                    </ListView>
+                </StackPanel>
+            </StackPanel>
+            <GridSplitter Grid.Column="1" Grid.Row="1" VerticalAlignment="Stretch" Background="Blue" ShowsPreview="True" Width="5" Margin="2"/>
+            <!--<StackPanel DockPanel.Dock="Right" Grid.Column="2" Width="613" Height="auto" HorizontalAlignment="Left">-->
+            <TabControl DockPanel.Dock="Right" Grid.Column="2" Name="RightTabs" Margin="0,0,-609,0" HorizontalAlignment="Left" Width="611">
+                <TabItem Header="Details" Name="DetailsTab">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Unique Id:"/>
+                            <Label Content="Id"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Name:"/>
+                            <TextBox Name="MarkName" Width="320"/>
+                            <Label Content="Type:"/>
+                            <Label Name="MarkType" Content="Bookmark or Group"/>
+                        </StackPanel>
+                        <StackPanel>
+                            <Label Content="Description/Comment:"/>
+                            <TextBox Name="MarkDescription" MinLines="6"/>
+                        </StackPanel>
+                        <StackPanel>
+                            <Label Content="Tags"/>
+                            <DataGrid Name="MarkTags" Margin="30,0,0,0">
+                                <DataGrid.Columns>
+                                    <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Category"/>
+                                    <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Tag"/>
+                                    <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Value"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem>
+            </TabControl>
+            <!--</StackPanel>-->
+        </Grid>
+    </Grid>
+</UserControl>

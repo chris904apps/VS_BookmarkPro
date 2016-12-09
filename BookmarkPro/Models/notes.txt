@@ -1,0 +1,5 @@
+//object for visual studio projects
+IVsProject
+
+//user options file / solution options file
+.suo

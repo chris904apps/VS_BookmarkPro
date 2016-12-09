@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="BookmarkPro.chris p.002744f6-45b7-4cab-b6ea-28e2940c7d36" Version="1.0" Language="en-US" Publisher="chris p" />
+    <DisplayName>VS BookmarkPro</DisplayName>
+    <Description xml:space="preserve">BookmarkPro is a Visual Studio (VS) extension that gives developers the features, they need with that are currently not baked into VS's bookmark widget. </Description>
+    <MoreInfo>https://github.com/chris904apps/VS_BookmarkPro</MoreInfo>
+    <License>Resources\LICENSE</License>
+    <ReleaseNotes>Resources\CHANGELOG.md</ReleaseNotes>
+    <Tags>bookmark, code tagging, tag, mark </Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.14.0" DisplayName="Visual Studio MPF 14.0" d:Source="Installed" Version="[14.0]" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+  </Assets>
+</PackageManifest>
